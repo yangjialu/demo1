@@ -1,0 +1,110 @@
+from pages.base import BasePage
+from common.project_path import screen_path
+
+
+class RoomTabPages(BasePage):
+    home_tab = {"idname": "com.sabac.hy:id/home_channel_icon_on"}  # 房间tab按钮
+    channel_tab_home = {"idname": "com.sabac.hy:id/channel_tab_home_icon"}  # 开黑进房按钮
+    channel_tab_more_icon = {"idname": "com.sabac.hy:id/channel_tab_more_icon"}  # 发布房间按钮
+    view_group = {"idname": "com.sabac.hy:id/onlineMatchCount"}  # 速配队友
+    filter_button = {"idname": "com.sabac.hy:id/gameChannelFilter"}  # 筛选按钮
+    arrange_it = {"idname": "com.sabac.hy:id/startQuickMatchText"}  # 速配中安排一下按钮
+    modify_button = {"idname": "com.sabac.hy:id/quickMatchEdit"}  # 速配中修改按钮
+    title_more = {"idname": "com.sabac.hy:id/channel_chatting_title_more"}  # 房间右上角按钮
+    close_room_menu = {"idname": "com.sabac.hy:id/tv_channel_top_menu_close"}  # 退出房间按钮
+    pack_up_room = {"idname": "com.sabac.hy:id/tv_channel_top_menu_ic_packup"}  # 收起房间按钮
+    suspension_ball = {"checkId": "com.sabac.hy:id/simple_drawee_headicon"}  # 悬浮球
+    collect = {"classname": "android.widget.TextView", "textname": "我的收藏"}  # 我的收藏按钮
+    img_88 = {"imgName": screen_path + "/88.png"}  # 长按的房间名
+    enter_button = {"idname": "com.sabac.hy:id/my_room_home_enter"}  # 进入按钮
+    enter_add = {"idname": "com.sabac.hy:id/channel_entertainment_more"}  # 房间内+号按钮
+    order = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "召集令"}  # 点击房间+号按钮弹出的召集令按钮
+    room_add = '//*[@resource-id="com.sabac.hy:id/channel_tab_more_icon"]/android.widget.ImageView[1]'  # 房间tab右上角+号按钮
+    game_tag = {"idname": "com.sabac.hy:id/themeChannelName", "textname": "王者荣耀"}  # 任意的游戏标签
+    entertainment_tag = {"idname": "com.sabac.hy:id/themeChannelName", "textname": "扩列聊天"}  # 任意的娱乐标签
+    channel_left_publish = {"idname": "com.sabac.hy:id/tv_channel_left_publish"}  # 找人玩按钮
+    locked_room = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "房间上锁"}  # 房间上锁按钮
+    pwd_input = '//*[@resource-id="com.sabac.hy:id/ll_dialog_content"]/android.widget.RelativeLayout[1]'  # 设置房间密码输入框
+    submit_button = {"idname": "com.sabac.hy:id/dialog_confirm"}  # 提交按钮
+    define = {"classname": "android.widget.TextView", "textname": "确定"}  # 标签选中后弹出的确定按钮
+    title_more_button = {"checkId": "com.sabac.hy:id/channel_chatting_title_more"}  # 房间右上角按钮
+    channel_tab_search = {"idname": "com.sabac.hy:id/channel_tab_search_icon"}  # 全局搜索按钮
+    collect_name = {"idname": "com.sabac.hy:id/item_my_collect_channel_name"}  # 收藏的房间名
+    role_name = {"checkId": "com.sabac.hy:id/first_rich"}  # 进入房间
+    option_contact = {"checkId": "com.sabac.hy:id/global_search_option_contact"}  # 玩伴按钮
+    group_name = {"checkId": "com.sabac.hy:id/item_my_recent_enter_channel_name"}  # 最近访问的公会名称
+    enter_name = {"idname": "com.sabac.hy:id/item_my_recent_enter_channel_num"}  # 要进入的房间名
+    guild_id = {"checkId": "com.sabac.hy:id/room_mode_txt"}  # 进入房间的id号
+    channel_num = {"checkId": "com.sabac.hy:id/item_my_collect_channel_num"}  # 收藏列表的房间号
+    determine = {"idname": "com.sabac.hy:id/dialog_confirm", "textname": "确定"}  # 长按收藏的房间后弹出的确定按钮
+    room_disappear = {"checkId": "com.sabac.hy:id/item_my_collect_channel_num", "checkText": "公会ID：9125"}  # 取消收藏后消失的房间名
+    determine1 = {"idname": "com.sabac.hy:id/dialog_confirm"}  # 点击召集令后弹出的确定按钮
+    convene_display = {"checkId": "com.sabac.hy:id/tv_invite_user_num"}  # 召集显示标志
+    collect_channel_name = {"idname": "com.sabac.hy:id/item_my_collect_channel_name"}  # 收藏的房间的名称
+    room_mode_txt = {"checkId": "com.sabac.hy:id/room_mode_txt"}  # 进入收藏房间后的ID
+    game_mode_txt = {"checkId": "com.sabac.hy:id/current_mode_txt", "checkText": "开黑"}  # 游戏房间发布成功后显示对应开黑标签
+    entertainment_mode_txt = {"checkId": "com.sabac.hy:id/current_mode_txt", "checkText": "娱乐"}  # 娱乐房间发布成功后显示对应娱乐标签
+    cancel_btn = {"checkId": "com.sabac.hy:id/tv_theme_channel_float_cancel", "checkText": "取消"}  # 发布房间成功后提示语
+    unlock_publish = {"idname": "com.sabac.hy:id/dialog_confirm"}  # 解锁并发布按钮
+    head_desc = {"checkId": "com.sabac.hy:id/headDesc"}  # 显示的头信息
+    select_tag = {"classname": "android.widget.TextView", "textname": "和平精英"}  # 选择的游戏标签
+    filter_confirm = {"idname": "com.sabac.hy:id/filterConfirm"}  # 点击筛选后确定按钮
+    peace_tag = {"checkId": "com.sabac.hy:id/itemDesc", "checkText": "和平精英"}  # 左上角和平精英标签
+    del_filter = {"idname": "com.sabac.hy:id/deleteFilterItem"}  # 标签右边X按钮
+    recommend_tip = {"checkId": "com.sabac.hy:id/recommendTip", "checkText": "推荐"}  # 推荐图标
+    immediately_wheat = {"idname": "com.sabac.hy:id/dialog_confirm"}  # 立即上麦按钮
+    img_99 = {"img": screen_path + "/99.png"}  # 上麦成功显示的名称
+    head_desc_2 = {"idname": "com.sabac.hy:id/headDesc"}  # 要点击的任意有空麦的房间
+    current_txt = {"idname": "com.sabac.hy:id/current_mode_txt", "textname": "娱乐"}  # 娱乐按钮
+    high_quality = {"classname": "android.widget.TextView", "textname": "高音质开黑房"}  # 高音质开黑房按钮
+    gang_up = {"checkId": "com.sabac.hy:id/current_mode_txt", "checkText": "开黑"}  # 开黑按钮
+    room_collect = {"idname": "com.sabac.hy:id/collect"}  # 房间内收藏按钮
+    room_remove_collect = {"checkId": "com.sabac.hy:id/collect"}  # 房间收藏按钮消失
+    tag_name = {"idname": "com.sabac.hy:id/entertainment_mike_view_name"}  # 房间内个人标签名称
+    img_1 = {"imgName": screen_path + "/1.png"}  # 查看资料按钮
+    img_2 = {"imgName": screen_path + "/2.png"}  # 打招呼按钮
+    follow_button = {"checkId": "com.sabac.hy:id/tv_user_detail_to_chat", "checkText": "聊天"}  # 点击查看资料后弹出的聊天按钮
+    add_friend = {"idname": "com.sabac.hy:id/add_friend"}  # 点击打招呼出来的关注按钮
+    voice_btn = {"checkId": "com.sabac.hy:id/chatting_voice_btn"}  # 点击打招呼后出来的语音按钮
+    tv_content = {"checkId": "com.sabac.hy:id/tv_chatcontent", "checkText": "我关注了你，让我们成为玩伴一起玩吧"}  # 点击打招呼出来的关注按钮提示语
+    message_btn = {"idname": "com.sabac.hy:id/channel_entertainment_input"}  # 房间里面发信息按钮
+    message_input = {"idname": "com.sabac.hy:id/channel_et_sendmessage"}  # 输入框
+    send_btn = {"idname": "com.sabac.hy:id/channel_chatting_sent_btn"}  # 房间内发送按钮
+    send_context = {"checkId": "com.sabac.hy:id/tv_channel_chatcontent", "checkText": "房主 少林侠客：一帆风顺"}  # 发送的内容
+    face_btn = {"idname": "com.sabac.hy:id/channel_chatting_face_btn"}  # 房间内表情图标
+    select_face = {"idname": "com.sabac.hy:id/emoticon_view"}  # 选择的表情
+    face_context = {"checkId": "com.sabac.hy:id/tv_channel_chatcontent", "checkText": "房主 少林侠客：[t000/微笑]"}  # 发送表情的内容
+    image_btn = {"idname": "com.sabac.hy:id/channel_chatting_image_btn"}  # 房间内图片按钮
+    picture_btn = {"classname": "android.widget.TextView", "textname": "从相册中选取"}  # 从相册中选取按钮
+    pager_send_view = {"idname": "com.sabac.hy:id/picture_pager_send_view"}  # 图片发送按钮
+    picture_select = '//*[@resource-id="com.sabac.hy:id/picture_grid_view"]/android.widget.FrameLayout[24]'  # 选择的图片
+    img_3 = {"img": screen_path + "/3.png"}  # 发送的图片内容
+    mute_btn = {"idname": "com.sabac.hy:id/channel_entertainment_bottom_mute"}  # 房间内静音按钮
+    img_4 = {"imgName": screen_path + "/4.png"}  # 麦克风图标
+    img_5 = {"img": screen_path + "/5.png"}  # 锁住图标
+    close_wheat = {"idname": "com.sabac.hy:id/channel_mic_operate_text", "textname": "设为闭麦位"}  # 设为闭麦位按钮
+    suo_mai = {"idname": "com.sabac.hy:id/channel_mic_operate_text", "textname": "锁麦"}  # 锁麦按钮
+    status_img = {"checkId": "com.sabac.hy:id/entertainment_mike_status_img"}  # 闭麦成功后标识
+    msg_entrance = {"idname": "com.sabac.hy:id/channel_im_msg_entrance"}  # 快捷消息回复按钮
+    company_man = {"classname": "android.widget.TextView", "textname": "玩伴"}  # 快捷消息回复里面玩伴按钮
+    company_name = {"checkId": "com.sabac.hy:id/firend_float_name"}  # 玩伴名称
+    et_input = {"idname": "com.sabac.hy:id/float_im_et_input"}  # 快捷回复消息中输入框
+    chatting_sent_btn = {"idname": "com.sabac.hy:id/float_im_chatting_sent_btn"}  # 快捷回复消息中发送按钮
+    message_read_status = {"checkId": "com.sabac.hy:id/tv_message_read_status"}  # 消息送达标志
+    room_management = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "房间管理"}  # 房间管理按钮
+    change_bg = {"checkId": "com.sabac.hy:id/channelChangeBgTip", "checkText": "更换房间背景"}  # 更换房间背景按钮
+    turn_on_mode = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "K歌模式"}   # K歌模式按钮
+    open_ear_function = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "耳返功能"}  # 耳返功能按钮
+    feed_back = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "意见反馈"}  # 意见反馈按钮
+    input_box = {"idname": "com.sabac.hy:id/edit_text_feedback_description"}  # 意见反馈输入框
+    send_opinion = '//androidx.appcompat.widget.LinearLayoutCompat'  # 意见反馈界面发送按钮
+    lock_wheat = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "自动锁麦"}  # 自动锁麦按钮
+    public_screen = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "关闭公屏"}  # 关闭公屏按钮
+    yes_confirm = {"idname": "com.sabac.hy:id/dialog_confirm"}  # 点击关闭公屏后弹出的是按钮
+    close_public_screen = {"checkId": "com.sabac.hy:id/channel_chatting_system_tv", "checkText": "此房间公屏已关闭"}  # 关闭公屏提示
+    room_locked = {"idname": "com.sabac.hy:id/channel_more_label", "textname": "房间上锁"}  # 房间上锁按钮
+    pwd_input_box = '//*[@resource-id="com.sabac.hy:id/ll_dialog_content"]/android.widget.RelativeLayout[1]'  # 密码输入框
+    submission_btn = {"idname": "com.sabac.hy:id/dialog_confirm"}  # 提交按钮
+    get_into = {"checkId": "com.sabac.hy:id/my_room_home_enter", "checkText": "进入"}  # 进入按钮
+    btn_ball = {"idname": "com.sabac.hy:id/simple_drawee_headicon"}  # 悬浮球
+
