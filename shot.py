@@ -7,7 +7,12 @@ if __name__ == '__main__':
     d = u2.connect()
 
     d.screenshot("main1"+".png")
-    print("第一次")
+    # print(d.serial)
+    # print(d.wlan_ip)
+    # print(d.device_info)
+    # d.screen_on()
+    # d.screen_off()
+    # d.unlock()
 
 
 
